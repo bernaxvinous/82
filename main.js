@@ -7,7 +7,7 @@ ctx = canvas.getContext("2d");
 color = "black";
 widthLine = 1;
 
-canvas.addEventListener("mouseDown", myMouseDown);
+canvas.addEventListener("mousedown", myMouseDown);
 function myMouseDown(e)
 {
     color = document.getElementById("color").value;
@@ -30,7 +30,7 @@ function myMouseUp(e)
 canvas.addEventListener("mousemove", myMouseMove);
 function myMouseMove(e)
 {
-    PositionMouseX = e.clientX - canvas.offsetleft;
+    PositionMouseX = e.clientX - canvas.offsetLeft;
     PositionMouseY = e.clientY - canvas.offsetTop;
 
     if (mouseEvent == "mouseDown") {
